@@ -1,0 +1,22 @@
+<h1>New Releases</h1>
+
+<p>The following is a list of new releases.
+<br>
+Click the <strong>album cover</strong> or <strong>artist name</strong> for more information.</p>
+
+
+<div class="content" >
+    <div fxLayout="row wrap" fxLayout.xs="column">
+        <div fxFlex [style.margin]="'20px'" *ngFor="let release of releases">
+            <!-- Single "Responsive" Card-->
+            <app-release [name]="release.name"
+                        [image]="release.images[0].url"
+                        [release_date]="release.release_date"
+                        [total_tracks]="release.total_tracks"
+                        [artists]="release.artists"
+                        [releaseId]="release.id"
+                        ></app-release>
+            <!-- -->
+        </div>
+    </div>
+</div>

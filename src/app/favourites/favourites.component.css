@@ -1,0 +1,5 @@
+div {
+    margin-top: 10px;
+}
+
+.mat-list-item .mat-icon:hover{ cursor: pointer; }
